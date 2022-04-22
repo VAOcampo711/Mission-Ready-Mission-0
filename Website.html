@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styling.css" type="text/css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="icon" href="HouseLogo.png">
+  <title>My Company</title>
+</head>
+
+<body>
+<!-- NAVIGATION BAR -->
+<nav class="navbar">
+<!-- LOGO -->
+<div id="logo">
+  <img  src="HouseLogo.png" alt="House Logo" style="vertical-align:middle" width ="40">  
+  <span>My Company</span>
+</div>
+<!-- NAVIGATION MENU LINKS -->
+<ul class="nav-links">
+	<li><a href="">Menu1</a></li>
+	<li><a href="">Menu2</a></li>
+	<li><a href="">Menu3</a></li>
+	<li class="login"><a href="">Login</a></li>
+</ul>
+<i id="hamburger" class="fa fa-bars" aria-hidden="true" onclick="myFunction()"></i>
+</nav>
+
+<!-- RESPONSIVE NAV LINK-->
+<nav class="navbar2">
+<ul id="nav-links2">
+  <li><a href="">Menu1</a><br><br></li>
+  <li><a href="">Menu2</a><br><br></li>
+  <li><a href="">Menu3</a><br><br></li>
+  <li class="login"><a href="">Login</a></li>
+</ul>
+</nav>
+
+<!-- BACKGROUND IMAGE AND SEARCH BAR-->
+<div class="container">
+  <img src="House.jpg" alt="Background" style="width:100%; height: auto;">
+  <div class="top-left">Lorem ipsum <br> dolor sit amet
+  <form class="searchbar">
+    <input type="text" name="search">
+    <button type="submit">Search</button>
+  </form>
+  </div>
+</div>
+
+<!-- IMAGES -->
+<div class="row">
+  <figure class="image">
+    <img src="House1.jpeg" alt="House1" style="width:100%">
+	<figcaption><b>Lorem ipsum</b><br>Dolor sit amet</figcaption>
+  </figure>
+  <figure class="image">
+    <img src="House2.jpg" alt="House2" style="width:100%">
+	<figcaption><b>Lorem ipsum</b><br>Dolor sit amet</figcaption>
+  </figure>
+  <figure class="image">
+    <img src="House3.jpeg" alt="House3" style="width:100%">
+	<figcaption><b>Lorem ipsum</b><br>Dolor sit amet</figcaption>
+  </figure>
+</div>
+
+<!-- BUTTON SCRIPT -->
+<script>
+function myFunction() {
+  var x = document.getElementById("nav-links2");
+  if (x.style.display == "none"){
+    x.style.display = "inline-block";
+  } else{
+    x.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>

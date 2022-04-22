@@ -1,0 +1,158 @@
+/* GENERAL STYLING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+    padding-bottom: 20px;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: grey;
+  color: black;
+  width: 100%;
+}
+
+.nav-links {
+ display: flex;
+ gap: 1em;
+ font-size: 16px;
+}
+.nav-links a {
+  color: black;
+}
+.nav-links li:hover {
+ background-color: #a6a6a6;
+}
+.nav-links li {
+ padding: 5px 20px;
+}
+
+#logo {	
+ font-size: 20px;
+}
+
+.login {
+ border-style: solid;
+}
+
+#hamburger{
+  display:none;
+  cursor: pointer;
+}
+
+/* HIDDEN NAVBAR*/
+.navbar2 {
+  padding-left:50%;
+  background-color: grey;
+  width: 100%;
+}
+
+#nav-links2 {
+ display: none;
+ font-size: 16px;
+ padding-bottom:10px;
+}
+#nav-links2 a {
+  color: black;
+}
+
+/* BACKGROUND IMAGES */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 7.5vw;
+}
+
+.top-left {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+/* SEARCH BAR */
+form.searchbar input[type=text] {
+  float: left;
+  width: 70%;
+  padding: 10px;
+  border: 1px solid grey;
+  background: #f1f1f1;
+}
+
+form.searchbar button {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid grey;
+  border-left: none;
+  background: #2196F3;
+  color: white;
+  cursor: pointer;
+}
+
+form.searchbar button:hover {
+  background: #0b7dda;
+}
+
+form.searchbar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* MAIN BODY IMAGES */
+.image {
+  float: left;
+  width: 33.33%;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+figcaption {
+  background-color: grey;
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 770px) {
+.nav-links {
+ display: none;
+}
+
+#hamburger{
+ display: flex;
+}
+
+.image {
+  width: 100%;
+}
+}
